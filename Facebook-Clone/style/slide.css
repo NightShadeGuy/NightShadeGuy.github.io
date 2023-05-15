@@ -1,0 +1,427 @@
+.main{
+    z-index: 300px;
+    margin-left: -300px;
+}
+
+.remind{
+    position: relative;
+
+    width: 680px;
+    height: 226.7px;
+    margin:auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background-color: rgb(37, 37, 37);
+}
+
+.computer-icon{
+   margin-left: 300px;
+   margin-top: 12px;
+   width: 85px;
+}
+
+.remember, .remember-help{
+    color:white;
+    margin-left: 15px;
+}
+
+.remember{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.remember-help{
+    font-size: 16px;
+    width: 600px;
+    overflow-wrap: break-word;
+}
+
+.select-button{
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+
+.ok-button, .notNow-button{
+   width: 320px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   margin-top: 10px;
+   margin-right: 10px;
+   border:none;
+   border-radius: 5px;
+   font-size: 12px;
+   font-weight: bold;
+   cursor:pointer
+}
+
+.ok-button{
+    color:rgb(82, 149, 248);
+    background-color: rgb(47, 70, 112);
+}
+
+.notNow-button{
+    color:white;
+    background-color: rgb(59, 59, 59);;
+}
+
+.ok-button:hover {
+    background-color: rgb(64, 96, 155);
+ }
+
+ .notNow-button:hover{
+    background-color: rgb(73, 71, 71);;
+ }
+
+ .remind-facebook-logo{
+    position: absolute;
+
+    top: 15px;
+    left: 15px;
+    width: 40px;
+ }
+
+ .close{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color:rgb(184, 181, 181);
+    padding: 4px 10px 4px 10px;
+    font-size: 20px;
+    cursor: pointer;
+ }
+
+ .close:hover{
+    border-radius: 20px;
+    background-color: rgb(73, 71, 71);
+ }
+
+ 
+.do-something-container{
+    width: 680px;
+    height: 123px;
+    margin-top: 50px;
+    padding-top: 10px;
+    border-radius: 8px;
+    background-color: rgb(37, 37, 37);
+    
+    margin: auto;
+}
+
+.row1{
+    display: flex;
+    margin-left: 15px;
+}
+
+.profile-me{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    
+}
+
+.profile-me:hover{
+    opacity: 0.8;
+}
+
+.do-something{
+    width: 575px;
+    height: 40px;
+    border-radius: 25px;
+    margin-left: 10px;
+    background-color: rgb(59, 59, 59);;
+    color:white;
+    border: none;
+    font-size: 15px;
+}
+
+.profile-me, .do-something{
+    cursor: pointer;
+}
+
+.do-something:hover{
+    background-color: rgb(73, 71, 71);
+}
+
+.do-something-border{
+    width: 645px;
+    border-bottom: 2px solid rgb(49, 49, 49);
+    margin: 10px 20px 10px 20px;
+}
+
+.activity-section{
+    display: flex;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.activity{
+     display: flex;
+     flex: 1px;
+     align-items: center;
+     justify-content: center;
+     cursor: pointer;
+}
+
+.activity:hover{
+    border-radius: 8px;
+    background-color: rgb(73, 71, 71);
+}
+
+.activity-icon{
+    height: 30px;
+    width: 30px;
+    border-radius: 20px;
+  
+}
+
+.activity-text{
+    color:white;
+    height: 40px;
+    padding-top: 10px;
+    font-size: 14px;
+    margin-left: 5px;
+    margin-bottom: -5px;
+}
+
+
+.header-content{
+    display: grid;
+    grid-template-columns: 70px 100px 10px;
+    width: 680px;
+    
+    background-color: rgb(46, 46, 46); 
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding: 10px 0px 0px 0px;
+    margin:auto;
+    margin-top: 20px;
+}
+
+.thumbnail1-image{
+    display: inline-block;
+    width: 50px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.image1{
+    width: 38px;
+    border-radius: 20px ;
+}
+
+.content-title, .date-posted{
+    display: flex;
+    flex-direction: column; 
+    line-height: 20px; 
+    font-weight: bold;
+}
+
+.content-title:hover{
+  text-decoration: underline;
+}
+
+.content-title:hover, .date-posted:hover{
+   cursor: pointer;  
+}
+
+.content-title{
+    color: white;
+    font-size: 14px;
+}
+
+.date-posted{
+    display: inline-block;
+    color:gray;
+    font-size: 12px;
+}
+
+.public-icon{
+    width: 15px;
+    height: 15px;
+    margin-left: -2-px;
+    background-color: rgb(46, 46, 46); 
+}
+
+.header-content i{   
+    margin-right: 220px;
+    color:rgb(219, 215, 215);
+}
+
+.ellipsis-icon{
+   margin-top: 10px;
+   margin-left: 480px; 
+   cursor: pointer;
+}
+
+.caption{
+    color:white;
+    font-size: 14px;
+    width: 600px;
+    margin: 5px 0px 0px 15px;    
+}
+
+.link{
+    color:rgb(44, 110, 233);
+}
+
+.video{
+    width: 680px;
+    margin: 50px 0px 0px -70px;
+    cursor: pointer;
+}
+
+.bottom-container{
+    display: flex;
+    position: relative;
+
+    width: 680px;
+    height: 50px;
+    background-color: rgb(37, 37, 37);
+    margin:auto;
+}
+
+.emoji-icon{
+    margin-left: 15px;
+}
+
+.emoji-icon, .list-comment, .number-comment, .number-comment2,
+.number-comment3, .number-share{
+    color:rgb(184, 184, 184);
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.list-comment{
+    font-size: 15px;
+    margin-left: 5px;
+    
+}
+
+.number-comment, .number-comment2, .number-comment3,
+.number-share{
+    font-size: 14px; 
+}
+
+.number-comment, .number-comment2, .number-comment3{
+    margin: 10px 15px 0px 50px;
+}
+
+.number-comment2{
+    margin-left: 450px;
+}
+
+.number-comment3{
+   margin-left: 260px;
+}
+
+.number-share{
+   margin-left: -10px;
+}
+
+
+.list-comment:hover, .number-comment:hover, .number-comment2:hover,
+.number-comment3:hover, .number-share:hover{
+   text-decoration: underline;  
+}
+
+.bottom-border{
+    position: absolute;
+    height: 40px; 
+    width: 650px;
+
+    border-bottom: 2px solid rgb(49,49,49);
+    margin: 0px 15px 0px 15px;
+    pointer-events: none;   
+}
+
+.bottom-activity{
+  display: flex;
+  width: 680px;
+  
+  background-color: rgb(37, 37, 37);
+  padding-bottom: 5px;
+  margin: auto;
+}
+
+.bottom-button{
+    width: 222px;
+    height: 35px;
+    color:rgb(184, 184, 184);
+    background-color: rgb(37, 37, 37);
+    border: 1px solid rgb(37, 37, 37);
+    margin-right: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.bottom-button:hover{
+    background-color: rgb(73, 71, 71);
+    border-radius: 5px;
+}
+
+
+@media (max-width: 1270px){
+    .leftside-bar{
+        opacity: 0;
+        width: 0px;
+        pointer-events: none;   
+    }
+}
+
+@media (max-width: 1330px){
+    .rightside-bar{
+        opacity: 0;
+        width: 0px;
+        pointer-events: none;   
+    }
+}
+
+@media (max-width: 1400px){
+
+    .header-main, .remind, .do-something-container,
+    .header-content, .video, .bottom-container, .bottom-activity{
+        width: 610px;  
+    }
+   
+    .do-something{
+        width: 510px;
+    }
+    .remember-help{
+        font-size: 15px;       
+    }
+
+    .do-something-border{
+        width: 570px;
+    }
+
+    .bottom-border{
+        width: 580px;
+    }
+
+    .header-content i{
+        margin-left: -80px;
+    }
+
+    .list-comment, .number-comment, .number-comment2,
+     .number-comment3, .number-share{
+        font-size: 13px;
+    }
+
+    .number-comment2{
+        margin-left: 390px;
+    }
+
+    .number-comment3{
+        margin-left: 230px;
+    }
+
+    .bottom-button{
+       width: 200px;
+    }
+
+}
+ 
+

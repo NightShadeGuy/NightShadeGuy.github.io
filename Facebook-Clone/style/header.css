@@ -1,0 +1,260 @@
+.header{
+    position: fixed;
+    display: flex;    
+    justify-content: space-between;
+    top: 0;
+    left:  0;
+    right: 0;
+    height: 56px;
+    background-color: rgb(36, 38, 41);
+    border-bottom: 1px solid rgb(59, 59, 59);
+    z-index: 1;
+}
+
+.left-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    width: 320px;
+}
+
+.facebook-logo{
+    height: 45px;
+    width: 45px;
+    margin-left: 20px; 
+    cursor: pointer; 
+}
+
+.search-box{
+    padding: 13px 0px 13px 0px;
+    width: 220px;
+    border-radius: 25px;
+    margin-left: 5px;
+    font-size: 15px;
+    border: none;
+    background-color: rgb(59, 59, 59);;
+    color:white;
+}
+
+input[type=text]{
+    padding-left: 20px;
+}
+
+::placeholder{
+    color:rgb(199, 200, 207);  
+}
+
+.middle-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+    width: 446px;
+    margin-right: 150px;
+}
+
+.home{
+    font-size: 21px;
+    color:rgb(55, 127, 235); 
+    position: relative;
+    margin-right: 20px;
+}
+
+.current-line{
+    position: absolute;
+    height: 56px;
+    bottom: -15px;
+    width: 111.59px;
+    color:rgb(55, 127, 235);
+    border-bottom: 2px solid rgb(55, 127, 235);  
+}
+
+
+.group{
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+.home, .marketplace, .group, .gaming{
+    width: 111px;
+    position: relative;    
+}
+
+.right-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-right: 18px;
+    width: 204px;
+    flex-shrink: 0;
+}
+
+.menu-icon, .messenger-icon, .notifications-icon,
+.user{
+    position: relative;    
+}
+
+.menu-icon, .messenger-icon, .notifications-icon,
+.user{
+    width: 40px; 
+}
+
+.menu-icon, .messenger-icon, .notifications-icon,
+.user{
+  cursor: pointer;
+}
+
+.message-number{
+    position: absolute;
+    top: -6px;
+    right: -5px;
+    background-color: rgb(219, 58, 58);
+    color:white;
+    padding: 0px 5px 0px 5px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 500; 
+}
+
+
+.menu-icon, .messenger-icon, .notifications-icon{
+    background-color: rgb(65, 64, 64);
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+}
+
+.messenger-icon i, .notifications-icon i{
+    font-size: 20px;
+    color:white;
+    margin: 10px 0px 0px 10px;
+ }
+
+ .notifications-icon i{
+    margin-left: 12px;
+ }
+
+.menu-image{
+   margin-top: 8px;
+   margin-left: 8px;
+   
+}
+
+.profile-image{
+    border-radius: 20px;
+    height: 40px;
+    width: 40px;
+    margin-top: 2px;
+   
+}
+
+.menu-icon:hover, .messenger-icon:hover, .notifications-icon:hover{
+  background-color: rgb(88, 87, 87);
+  border-radius: 20px;
+}
+
+.user:hover{
+    opacity: 0.8;
+}
+
+.home-tooltip, .market-tooltip,
+.group-tooltip, .gaming-tooltip,
+.menu-tooltip, .messenger-tooltip,
+.notifications-tooltip, .account-tooltip{
+    position: absolute;
+    pointer-events: none;
+    color:rgb(80, 78, 78);
+    font-size: 12px;
+    background-color: rgb(207, 204, 204);
+    padding: 6px 10px 6px 10px;
+    border-radius: 5px;
+    opacity: 0;
+
+    transition:  opacity 0.5s; 
+}
+
+.home-tooltip{
+    bottom: -47px;
+    margin-left: 27px;
+}
+
+.market-tooltip{
+    bottom: -38px;
+    margin-left: 13px;
+}
+
+.group-tooltip, .gaming-tooltip{
+    bottom: -41px;
+    margin-left: 25px;
+}
+
+.menu-tooltip{
+    bottom: -30px;
+    margin-left: -5px;
+}
+
+.messenger-tooltip, .notifications-tooltip{
+    bottom: -41px;
+    margin-left: -20px;
+}
+
+.account-tooltip{
+    bottom: -38px;
+    margin-left: -15px;
+}
+
+.home i, .marketplace-icon, .group-icon, .gaming-icon{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.home:hover .home-tooltip, .marketplace:hover .market-tooltip,
+.group:hover .group-tooltip, .gaming:hover .gaming-tooltip,
+.menu-icon:hover .menu-tooltip, .messenger-icon:hover .messenger-tooltip,
+.notifications-icon:hover .notifications-tooltip,
+.user:hover .account-tooltip{
+    opacity: 1;
+}
+
+.home:hover{
+    cursor:pointer;
+}
+
+.marketplace:hover, .group:hover, .gaming:hover{
+    background-color: rgb(102, 100, 100);
+    padding: 2px 0px 1px 0px;
+    border-radius: 5px;
+    cursor:pointer;
+}
+
+@media (max-width: 760px) {
+ 
+    .search-box{
+        width: 150px;
+        margin-right: 400px;    
+    }
+}
+
+@media (max-width: 700px){
+
+    .search-box{
+        width: 53px;
+        margin-right: 400px;    
+    }
+
+    .middle-section{
+        width: 0px;
+        background-color: rgb(36, 38, 41);    
+        pointer-events: none;  
+    }
+
+    .home-icon{
+        color: rgb(36, 38, 41);
+    }
+
+    .current-line{
+        border-color:rgb(59, 59, 59);
+    }
+
+}

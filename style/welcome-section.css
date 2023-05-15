@@ -1,0 +1,125 @@
+
+#welcome-section {
+    height: 685px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+ #message-container {
+    position: relative;
+    border-radius: 10px;
+    max-width: 350px;
+    margin-right: 50px;
+
+    box-shadow: 1px 2px 15px rgba(20, 241, 31, 0.971),
+                -1px -2px 15px rgba(20, 40, 221, 0.5);
+
+    animation: shadow 2s infinite alternate-reverse;
+ }
+
+ #image {
+    max-width: 100%;
+    margin-right: 50px;
+    border-radius: 10px;
+ }
+
+ @keyframes shadow {
+   from {
+      box-shadow: 1px 2px 15px rgba(31, 200, 39, 0.971),
+      -1px -2px 15px rgba(20, 40, 221, 0.5);
+      
+   } to {
+      box-shadow: 1px 2px 15px rgba(235, 16, 16, 0.971),
+      -1px -2px 15px rgba(15, 95, 233, 0.5);
+   }
+ }
+
+ 
+ #message {
+    position: absolute;
+    top: 45%;
+    left: 2px;
+
+    font-size: 1.2rem;  
+    font-weight: 600;
+    text-align: center;
+ }
+ 
+ #welcome-section h1 {
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 3rem;  
+ }
+ 
+ #welcome-section h1, p {
+    margin: 0;
+ }
+
+ .student {
+    text-align: center;
+    color:#14ff00;
+    font-style: italic;
+    font-size: 2rem;  
+ }
+
+
+ 
+@media (max-width: 500px) {  
+
+    #welcome-section {
+      height: 450px;
+      flex-direction: column;  
+      align-items: center;
+    }
+
+    #image {
+        width: 100%;
+        max-height: 300px;
+        object-fit: cover;
+     }
+
+     #message-container {      
+        border-radius: 10px;
+        max-width: 350px;
+        margin: 0;
+        margin-bottom: 25px;
+     }
+
+      #message {
+         top: 25%;
+      }
+  
+     #welcome-section h1 {   
+       font-size: 1.5rem;  
+     }
+  
+    #welcome-section p {
+        font-size: 1.1rem;   
+     }
+
+     #projects {
+        width: 100%;
+        top: 535px;
+     }
+  
+     .projects-grid {
+         grid-template-columns: 1fr;
+         gap: 25px; 
+         
+      }
+  
+      #projects h2 {
+         font-size: 20px;
+      }
+  
+     .project-title {
+         color: white;
+         font-size: 20px; 
+     }
+   
+     #contact {
+         top: 1200px; 
+     }
+
+    
+  }

@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+html {
+   scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: rgb(20,20,20); 
+  color: white;
+  padding: 60px;
+}
+
+#navbar {
+  background: linear-gradient( rgb(8, 194, 17),rgb(8, 194, 17), rgb(117, 220, 12));
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  z-index: 1;
+}
+
+ul {
+  display: flex;
+  font-size: 20px;
+  float: right;
+  gap: 10px;
+  margin-right: 5%;
+  list-style-type: none;
+}
+
+.nav-link {
+   color: white;
+   text-decoration: none;
+}
+
+.nav-link:hover {
+   text-shadow: 2px 2px 10px white;
+}
+
+#projects {
+   position: absolute;
+   top: 755px;
+   left: 0;
+   right: 0;
+   
+   padding-bottom: 20px;
+   background: linear-gradient(darkgreen, limegreen, darkgreen, limegreen, darkgreen);
+}
+
+#projects h2 {
+   text-align: center; 
+   font-size: 30px;
+}
+
+.projects-grid {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 10px;
+   padding: 20px;
+}
+
+#profile-link {
+   text-decoration: none;
+}
+
+.project.project-tile { /*images of projects */
+   width: 100%;
+   height: 250px;
+   object-fit: cover;
+   border-radius: 5px 5px 0 0;
+}
+
+.projects-grid p {
+   background-color: rgb(20,20,20);
+   width: 100%;
+   text-align: center;
+   padding: 15px 0 15px 0;
+   margin-top: -10px;
+}
+
+.project-title {
+   color: white;
+   font-size: 20px; 
+   white-space: nowrap;
+}
+
+#contact {
+  position: relative;
+  top: 1050px;
+  width: 100%;
+  background-color: rgb(20,20,20);
+  margin-top:210px;
+  padding-bottom: 20px;
+}
+
+.header-contact {
+  text-align: center;
+}
+
+
+
+.header-contact p {
+ margin-top: -20px;
+}
+
+.contact-lists {
+ display: flex;
+ flex-direction: column;
+}
+
+.contact-lists {
+  display: flex;
+  flex-direction: rows;
+  align-items: center;
+  text-align: center;
+}
+
+.contact-lists a {
+   color: white;
+   margin: 5px;
+   width: 150px;
+   text-decoration: none;
+   text-align: left;
+}
+
+.contact-lists a:hover {
+   transition: all 0.s ease-in-out;
+}
+
+.contact-lists i{
+   font-size: 25px;
+   margin: 5px;
+   width: 40px; 
+}
+
+.contact-lists a:hover:first-child{
+   color:#4087f0;
+}
+
+.contact-lists a:hover:nth-child(2){
+   color:#8733f4;
+}
+
+.contact-lists a:hover:nth-child(3){
+   color: white;
+}
+
+.contact-lists a:hover:nth-child(4){
+   color: rgb(110, 229, 240);
+}
+
+@media (width <= 500px) {
+    
+   #welcome-section {
+      height: 285px;
+      
+    }
+
+   .project.project-tile {  /*images of projects */
+      max-width: 95%;
+      transform:  translateX(9px);
+   }
+
+   .projects-grid  p {
+      max-width: 95%; 
+      margin: auto;
+      margin-top: -10px;
+   }
+
+   .projects-grid  p span {
+      font-size: 18px;
+   }
+   
+   #projects {
+      min-width: 100%;
+   }
+
+   #contact {
+      margin-top: 260px;
+      padding-bottom: 20px;
+    }
+
+    .header-contact  h2{
+      font-size: 23px;
+      margin: 0;
+    }
+
+    .header-contact p {
+      margin: 5px 0 15px 0;
+    }
+}
+
+@media (width > 501px){
+
+    ul {
+      column-gap: 30px;
+    }
+
+    .projects-grid {
+        gap: 20px;
+        margin: 0 20px 0 20px; 
+    }
+   
+    #contact {
+      top: 620px;  
+    }
+
+    .contact-lists a:hover {
+      transition: all 0.5s ease-in-out;
+   }
+ 
+}
+
+
+@media (width > 1400px){
+
+   ul {
+       column-gap: 30px;
+       margin-right: 3%;
+   }
+
+   #projects {
+      width: 100%;    
+   }
+
+   .projects-grid {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+   .project project-tile {
+      width: 400px;
+      object-fit: contain;
+    }
+
+    #contact {
+      top: 300px;     
+    }
+
+    .contact-lists {
+      flex-direction: row;
+      justify-content: center;
+      padding: 10px 10px;
+    }
+
+   .contact-lists a:hover {
+      transform: translateY(5px);
+      transition: all 0.5s ease-in-out;
+   }
+
+    .contact-lists i{
+        width: 30px;
+    }
+
+    
+     
+}

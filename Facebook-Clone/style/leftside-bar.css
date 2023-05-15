@@ -1,0 +1,78 @@
+.leftside-bar{
+    position: fixed;
+    left: 0;
+    top: 56px;
+    bottom: 0;
+    width: 344px; 
+    background-color: rgb(25, 26, 27);
+   
+    
+}
+
+.my-account-profile{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 22px 0px 0px 8px;
+    
+}
+
+.rightside-profile-image{
+    height: 35px;
+    width: 35px;
+    border-radius: 18px;
+    margin-left: 10px;
+}
+
+.my-name{
+    font-size: 14px;
+    margin-left: 15px;
+    color:white;
+    font-weight: 500;
+}
+
+.my-account-profile, .icons{
+    cursor: pointer;
+    height: 40px;
+}
+
+.icons{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 10px 0px 0px 8px;
+}
+
+.leftside-icon{
+    height: 34px;
+    width: 34px;
+    object-fit: contain;
+    margin-left: 10px;
+    border-radius: 18px;
+}
+
+.leftside-title{
+    font-size: 14px;
+    margin-left: 15px;
+    
+    color:white;
+}
+
+.seemore-icon{
+    height: 35px;
+    width: 35px;
+    margin-left: 8px;
+    background-color: rgb(46, 45, 45);
+    border-radius: 19px;
+}
+
+.expand-icon{
+    color:white;
+    margin-left: 8px;
+    margin-bottom: -10px;
+}
+
+.my-account-profile:hover, .icons:hover{
+    background-color: rgb(77, 75, 75);
+    border-radius: 8px;
+}
