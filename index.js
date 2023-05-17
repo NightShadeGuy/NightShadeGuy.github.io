@@ -1,5 +1,7 @@
 const user = {
-   info: `I love creating simple project and learn new things to broaden and improve my knowledge and skills`, 
+   info: `I am currently learning web development and exploring opportunities to develop my programming skills.
+          Now i'm looking for an Intership within a mission-driven company to continue growing my skills
+          contributing to a production-level codebase`, 
    wallpaper: [ 'myimage1.jpeg', 'myimage2.jpg', 'myimage3.jpg']
 }
 
@@ -38,11 +40,11 @@ container.addEventListener('mouseenter', () => {
                 messageIndex = 0;
                 message.textContent = '';
                 image.style.filter = '';
-                image.style.transition = 'all 0.5s ease-in';  
+                image.style.transition = 'all 0.5s';  
             }, 3000);     
          }
          
-    }, 100); 
+    }, 50); 
 }); 
 
 
