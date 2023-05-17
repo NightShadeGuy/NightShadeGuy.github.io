@@ -1,7 +1,5 @@
 const user = {
-   info: `I am currently learning web development and exploring opportunities to develop my programming skills.
-          Now i'm looking for an Intership within a mission-driven company to continue growing my skills
-          while contributing to a production-level codebase`, 
+   info: `I am currently learning web development and exploring opportunities to develop my programming skills. Now i'm looking for an Intership within a mission-driven company to continue growing my skills while contributing to a production-level codebase`, 
    wallpaper: [ 'myimage1.jpeg', 'myimage2.jpg', 'myimage3.jpg']
 }
 
