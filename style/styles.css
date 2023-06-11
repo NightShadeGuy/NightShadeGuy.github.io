@@ -46,7 +46,7 @@ ul {
    right: 0;
    
    padding-bottom: 20px;
-   background: linear-gradient(darkgreen, limegreen, darkgreen, limegreen, darkgreen);
+   background: linear-gradient(40deg, rgb(8, 194, 17),rgb(8, 194, 17));
 }
 
 #projects h2 {
@@ -140,31 +140,20 @@ ul {
 }
 
 .contact-lists a:hover:nth-child(2){
-   color:#8733f4;
-}
-
-.contact-lists a:hover:nth-child(3){
    color: white;
 }
 
-.contact-lists a:hover:nth-child(4){
+.contact-lists a:hover:nth-child(3){
    color: rgb(110, 229, 240);
 }
 
 @media (width <= 500px) {
     
    #welcome-section {
-      height: 285px;
-      
-    }
-
-   .project.project-tile {  /*images of projects */
-      max-width: 95%;
-      transform:  translateX(9px);
+      height: 285px; 
    }
 
    .projects-grid  p {
-      max-width: 95%; 
       margin: auto;
       margin-top: -10px;
    }
